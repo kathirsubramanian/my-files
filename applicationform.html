@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>Passport</title>
+        <script type="text/javascript" src="applicationform.js"></script>      
+    </head>
+    <style>
+        .container { 
+            background-color: aqua;
+        }
+        h1{
+            color:brown;
+            text-align: center;
+        }
+        h2{
+            color:violet;
+            text-align: center;
+        }
+        .p1{
+            color:green;
+            font-size:x-large;
+        }
+        .p2{
+            color:green;
+            font-size:x-large;
+        }
+        .p3{
+            color:green;
+            font-size:x-large;
+        }
+        .p4{
+            color:green;
+            font-size:x-large;
+        }
+    </style>
+    <body>
+    <div class="container">
+    <div class="h1"><h1>PASSPORT APPLICATION FORM</h1></div>
+    <div class="h2"><h2>Goverment of India, Ministry of external affairs</h2></div>
+    <form name="myform" onsubmit= "return validate()"  method="post">
+        <div class="p1"><p1><b>Service recquired</b></p1></div><br>
+         1.Applying for *: <input type="text" name="apply"><br/><br>
+         2.Type of Application *
+        <input type="radio" name="application" id="html">
+        <label for="normal">Normal</label>
+        <input type="radio" name="application" id="html">
+        <label for="tatkaal">Tatkaal</label><br><br>
+        3.Validity recquired(For minors between 15 and 18)
+        <input type="radio" name="years" id="html">
+        <label for="years">10 years</label>
+        <input type="radio" name="years" id="html">
+        <label for="years">upto age 18</label>
+        <input type="radio" name="years" id="html">
+        <label for="years">Not applicable</label><br><br>
+
+        <div class="p2"><p2><b>Applicant details</b></p2></div><br>
+        4.Applicant Name *:<input type="text" name="name"><br><br>
+        5.Surname:<input type="text" name="sname"><br><br>
+        6.Date Of Birth: <input type="date" text="month" name="year"><br><br>
+        7.Mobile Number: <input type="text" name="num"><br/><br>
+
+         8.Are you known by any other names(aliases)? *
+        <input type="radio" name="other" id="html">
+        <label for="other">Yes</label>
+        <input type="radio" name="other" id="html">
+        <label for="other">No</label><br><br>
+         9.Have you ever changed your name ? *
+        <input type="radio" name="change" id="html">
+        <label for="change">Yes</label>
+        <input type="radio" name="change" id="html">
+        <label for="change">No</label><br><br>
+         10.Gender
+        <input type="radio" name="gender" id="html">
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="html">
+        <label for="gender">Female</label><br><br>
+         11.Marital Status *
+        <input type="radio" name="maritial" id="html">
+        <label for="married">Married</label>
+        <input type="radio" name="maritial" id="html">
+        <label for="unmarried">Unmarried</label><br><br>
+        <div class="p3"><p3><b>Place Of Birth</b></p3></div><br>
+        <label for="place">12.Village or Town or City</label><br>
+        <input type="text" name="place" id="html"><br><br>
+        <label for="district">13.District</label><br>
+        <select name="district" id="district">
+        <option value="coimbatore">Coimbatore</option>
+        <option value="tirupr">Tirupur</option>
+        <option value="erode">Erode</option><br><br>
+        </select><br><br>
+        <label for="state">14.State</label><br>
+        <select name="state" id="state">
+        <option value="tamilnadu">Tamilnadu</option>
+        <option value="kerala">Kerala</option>
+        <option value="karnadaka">Karnadaka</option><br>
+        </select><br><br>
+        <label for="Country">15.Country</label><br>
+        <select name="country" id="country">
+        <option value="India">India</option>
+        <option value="Usa">Usa</option>
+        <option value="Canada">Canada</option><br>
+        </select><br><br>
+        <label for="Adhar no">16.Adhar number *</label><br>
+        <input type="adhar no" name="adharno" id="html"><br><br>
+        <label for="pan no">17.Pan number *</label><br>
+        <input type="pan no" name="panno" id="html"><br><br>
+        <label for="voter id">18.voter id(if available)</label><br>
+        <input type="voter id" name="voterid" id="html"><br><br>
+        <label for="qualification">19.Educational Qualification</label><br>
+        <input type="qualification" name="qualification" id="html"><br><br>
+        <label for="job">20.Employement Type</label><br>
+        <select name="job" id="job">
+        <option value="Goverment">Goverment</option>
+        <option value="Private">Private</option>
+        <option value="Business">Business</option><br>
+        </select><br><br>
+        <div class="p4"><p4><b>Family details</b></p4></div><br>
+        <label for="father name">21.Father name</label><br>
+        <input type="text" name="father name" id="html"><br><br>
+        <label for="guardian name">22.Guardian name</label><br>
+        <input type="text" name="guardian name" id="html"><br><br>
+        <label for="mother name">23.Mother name</label><br>
+        <input type="text" name="mother name" id="html"><br><br>
+        <button type="submit">Submit</button>
+        <a href="sucess"></a>     
+    </form>
+    </div>
+</body>
+</html>
